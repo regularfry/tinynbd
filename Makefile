@@ -1,6 +1,6 @@
 SRC := $(wildcard src/*.c)
 BIN := $(SRC:src/%.c=build/%)
-COMPILE = gcc
+COMPILE = gcc -Wall
 
 build/%: src/%.c
 	mkdir -p $(dir $@)
